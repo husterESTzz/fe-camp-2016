@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pictureswitch</title>
+    <link href="2.css" rel="stylesheet">
+    </head>
+<body id="bd">
+<div class="button-mage">
+    <button id="button1" style = "background: url(btn-gray.png)">小新</button><br/>
+    <button id="button2" style = "background: url(btn-blue.png)">巴卫</button>
+</div>
+
+<script>
+    var btn = document.getElementById("button1");
+    btn.onclick= function() {
+        button1.setAttribute("style", "background: url(btn-blue.png)");
+        button2.setAttribute("style", "background: url(btn-gray.png)");
+
+        bd.style.background = "url(xx1.jpg)";
+        bd.style.backgroundRepeat = "no-repeat";
+        bd.style.backgroundSize = "cover";
+    }
+    var btn2 = document.getElementById("button2");
+    btn2.onclick = function(){
+        button1.setAttribute("style", "background: url(btn-gray.png)");
+        button2.setAttribute("style", "background: url(btn-blue.png)");
+
+        bd.style.background = "url(bw1.jpg)";
+        bd.style.backgroundRepeat = "no-repeat";
+        bd.style.backgroundSize = "cover";
+
+    }
+
+
+</script>
+</body>
+</html>
